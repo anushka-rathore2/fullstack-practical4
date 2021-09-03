@@ -13,6 +13,7 @@
             background-color: ghostwhite;
             width: 95%;
             margin-top: 25px;
+            border: 2px solid grey;
         }
         .header
         {
@@ -30,7 +31,7 @@
         .banner
         {
             width: 100%;
-            height: 1000px;
+            height: 700px;
             background-color: lightblue;
         }
         .section-2
@@ -61,56 +62,49 @@
             background-color: coral;
             margin-bottom: 20px;
         }
-        .middle
+        .space2
         {
+            display: inline-flex;
             width: 100%;
-            height: 30%;
-            background-color: coral;
-            margin-bottom: 20px;
+            height: 250px;
         }
-        .lower
+        .circle
         {
-            width: 100%;
-            height: 31%;
-            background-color: coral;
+            width: 20%;
+            height: 250px;
+            background-color: goldenrod;
+            margin-right: 20px;
+            margin-left: 35px;
+            border-radius: 50%;
         }
         .section-3
         {
             display: inline-flex;
             width: 100%;
-            height: 500px;
+            height: 300px;
         }
         .first
         {
             width: 20%;
-            height: 500px;
+            height: 300px;
             background-color: red;
             padding: 20px;
             margin-right: 50px;
             margin-left: 100px;
 
         }
-        .second
-        {
-            width: 20%;
-            height: 500px;
-            background-color: red;
-            padding: 20px;
-            margin-right: 50px;
-        }
         .third
         {
             width: 20%;
-            height: 500px;
+            height: 300px;
             background-color: red;
             padding: 20px;
             margin-right: 50px;
-
         }
         .fourth
         {
             width: 20%;
-            height: 500px;
+            height: 300px;
             background-color: red;
             padding: 20px;
             margin-right: 100px;
@@ -122,7 +116,7 @@
             margin: auto;
             padding: 2px;
             background-color: violet;
-            margin-bottom: 75px;
+            margin-bottom: 25px;
         }
         .heading
         {
@@ -136,25 +130,28 @@
     <div class="container">
         <div class="header"><h1 class="heading">Header</h1></div>
         <div class="space1"></div>
-        <div class="banner"><h1 style="line-height: 900px;" class="heading">Banner</h1></div> 
+        <div class="banner"><h1 style="line-height: 700px;" class="heading">Banner</h1></div> 
+        <h1 style="text-align: center; margin-top: 10px;">Section-1</h1>
         <div class="space2">
-            <h1 style="text-align: center; margin-top: 10px;">Section-1</h1>
-            <img style="width: 100%;" src="./circles.png" alt="image is here">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
         </div>
         <h1 style="text-align: center; margin-top: 10px;">Section-2</h1>
         <div class="section-2">            
             <div class="left"><h1 style="line-height: 500px;"  class="heading">Main Content</h1></div>
             <div class="right">
                 <div class="upper"><h1 style="line-height: 150px;" class="heading">Article-1</h1></div>
-                <div class="middle"><h1 style="line-height: 150px;" class="heading">Article-2</h1></div>
-                <div class="lower"><h1 style="line-height: 150px;" class="heading">Article-3</h1></div>
+                <div class="upper"><h1 style="line-height: 150px;" class="heading">Article-2</h1></div>
+                <div class="upper"><h1 style="line-height: 150px;" class="heading">Article-3</h1></div>
             </div>
         </div> 
 
         <h1 style="text-align: center; margin-top: 10px;">Section-3</h1>        
         <div class="section-3">
             <div class="first"></div>
-            <div class="second"></div>
+            <div class="third"></div>
             <div class="third"></div>
             <div class="fourth"></div>
         </div>
