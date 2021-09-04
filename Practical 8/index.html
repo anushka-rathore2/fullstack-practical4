@@ -12,18 +12,18 @@
             margin: auto;
             background-color: ghostwhite;
             width: 95%;
-            margin-top: 25px;
+            margin-top: 2px;
             border:  2px solid lightgrey;
         }
         .header
         {
             text-align: center;
-            margin: auto;
+            margin-left: -2px;
             padding: 2px;
             background-color: grey;
-            width: 100%;
-            height: 80px;
-            
+            width: 95%;
+            height: 80px;            
+            position: fixed;            
         }
         .header ul
         {
@@ -95,38 +95,6 @@
             border-radius: 50%;
             height: 250px;
         }
-        .section-3
-        {
-            display: inline-flex;
-            width: 100%;
-            height: 300px;
-        }
-        .first
-        {
-            width: 20%;
-            height: 300px;
-            background-color: red;
-            padding: 20px;
-            margin-right: 50px;
-            margin-left: 100px;
-
-        }
-        .third
-        {
-            width: 20%;
-            height: 300px;
-            background-color: red;
-            padding: 20px;
-            margin-right: 50px;
-        }
-        .fourth
-        {
-            width: 20%;
-            height: 300px;
-            background-color: red;
-            padding: 20px;
-            margin-right: 100px;
-        }
         .footer
         {
             width: 100%;
@@ -164,30 +132,85 @@
             right: 10px;
             color: white;
         }
+        #container
+        {
+            display: inline-flex;
+        }
+        .first
+        {
+            width: 300px;
+            height: 450px;
+            overflow: hidden;
+            border: 1px solid gray;
+            margin-bottom: 10px;
+            text-align: justify;
+            padding: 20px;
+            margin-right: 20px;
+            background-color: floralwhite;
+        }
+        
+        .first img
+        {
+            width: 100%;
+            height: 200px;
+            border-radius: 20px;
+        }
+
+        .first h2
+        {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .mybutton
+        {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: white;
+            font-family: arial;
+            background-color: red;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        .mybutton:hover
+        {
+            background-color:blue;
+        }
+
+        .image
+        {
+            text-align: center;
+        }
         
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
+        <div class="header" id="home">
             <ul>
-                <li class="active"><a href="#"><h2 style="color: white;">HOME</h2></a></li>
-                <li class="active"><a href="#"><h2 style="color: white;">ABOUT US</h2></a></li>
-                <li class="active"><a href="#"><h2 style="color: white;">TEAM</h2></a></li>
-                <li class="active"><a href="#"><h2 style="color: white;">TECHNOLOGIES</h2></a></li>
-                <li class="active"><a href="#"><h2 style="color: white;">CONTACT US</h2></a></li>
+                <li class="active"><a href="#home2"><h2 style="color: white;">HOME</h2></a></li>
+                <li class="active"><a href="#about us"><h2 style="color: white;">ABOUT US</h2></a></li>
+                <li class="active"><a href="#team"><h2 style="color: white;">TEAM</h2></a></li>
+                <li class="active"><a href="#technologies used"><h2 style="color: white;">TECHNOLOGIES</h2></a></li>
+                <li class="active"><a href="#contact us"><h2 style="color: white;">CONTACT US</h2></a></li>
             </ul>
         </div>
-        <div class="space1"></div>
+        <div class="space1" id="home2"></div>
         <div class="banner"><img style="width: 100%; height: 600px;" src="./bann2.jpg" alt="Here is image"></div> 
-        <h1 style="text-align: center; margin-top: 10px;">Team Members</h1>
+        <br><br>
+        <h1 id="team" style="text-align: center; margin-top: 10px;">Team Members</h1>
+        <br>
         <div class="space2">
             <div class="circle"><img src="./man1-removebg-preview.jpg" alt="person1"></div>
             <div class="circle"><img src="./man2-removebg-preview.jpg" alt="person2"></div>
             <div class="circle"><img src="./man33-removebg-preview.jpg" alt="person3"></div>
             <div class="circle"><img src="./man44-removebg-preview.jpg" alt="person4"></div>
         </div>
-        <h1 style="text-align: center; margin-top: 10px;">About Us</h1>
+        <br><br><br>
+        <h1 id="about us" style="text-align: center; margin-top: 10px;">About Us</h1>
+        <br>
         <div class="section-2">            
             <div class="left">
                 <h2 style="text-align: center;">About Projects</h2>
@@ -214,17 +237,71 @@
                 <div class="upper"><img src="./pro3.jpg" alt="project-1"><div class="top-right"><h2 style="color: white;">Practical-3</h2></div></div>
             </div>
         </div> 
-
-        <h1 style="text-align: center; margin-top: 10px;">Section-3</h1>        
-        <div class="section-3">
-            <div class="first"></div>
-            <div class="third"></div>
-            <div class="third"></div>
-            <div class="fourth"></div>
-        </div>
+        <br><br>
+        <h1 id="technologies used" style="text-align: center; margin-top: 10px;">Technologies Used</h1>  
+        <br>      
+        <div id="container">
+            <div class="first">
+            <div class="imagebox">
+                <img src="../Practical 6/images/html.jpg" alt="html image">
+            </div>
+            <h2>Introduction to HTML</h2>
+            <p>The HyperText Markup Language, or HTML is the standard markup language
+                 for documents designed to be displayed in a web browser.
+                 documents designed to be displayed in a web browser.
+                 documents  web.</p>
+            <div class="image">
+                <a href="../Practical 6/Hpage.html" class="mybutton">Read More</a>
+            </div>
+            </div>
         
-        <h1 style="text-align: center; margin-top: 10px;">Section-4</h1>
-        <div class="footer"><h1 class="heading">Footer</h1></div></div>
+            <div class="first">
+                <div class="imagebox">
+                    <img src="../Practical 6/images/css.png" alt="css image">
+                </div>
+                <h2>Introduction to CSS</h2>
+                <p>Cascading Style Sheets is a style sheet language used for describing 
+                    the presentation of a document written in a markup language such as HTML
+                    presentation of a document written in a markup language such as HTML</p>
+                <div class="image">
+                    <a href="../Practical 6/Cpage.html" class="mybutton">Read More</a>
+                </div>
+            </div>
+        
+            <div class="first">
+                <div class="imagebox">
+                    <img src="../Practical 6/images/javascript.png" alt="javascript image">
+                </div>
+                <h2>Introduction to JS</h2>
+                <p>JavaScript, often abbreviated as JS,
+                     is a programming language that conforms to the ECMAScript specification
+                     JavaScript, often abbreviated as JS,
+                     is a programming language that conforms to the ECMAScript specification</p>
+                <div class="image">
+                    <a href="../Practical 6/JSpage.html" class="mybutton">Read More</a>
+                </div>
+            </div>
+        
+            <div class="first">
+                <div class="imagebox">
+                    <img src="../Practical 6/images/bootstrap.png" alt="bootstrap image">
+                </div>
+                <h2>Intro. to Bootstrap</h2>
+                <p>Bootstrap is a free and open-source
+                     CSS framework directed at responsive, mobile-first front-end web development
+                     CSS framework directed at responsive, mobile-first front-end web development.</p>
+                <div class="image">
+                       <a href="../Practical 6/Bpage.html" class="mybutton">Read More</a>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <h1 id="contact us" style="text-align: center; margin-top: 10px;">Contact Us</h1>
+        <br>
+        <div class="footer"><br><p style="text-align: center;">Website Template for Practical-8 &copy; 
+            <a href="#">Shopping Paradise</a> <br>
+            <a href="#home2">Back to Top</a>
+        </p></div></div>
     </div>
 </body>
 </html>
