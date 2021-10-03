@@ -1,0 +1,25 @@
+.checked{
+    color: green;
+    }
+    .unchecked{
+        color: red;
+    }
+    h1 {
+        text-align: center;
+        background-color: lightcoral;
+      }
+      th{
+        font-weight: bold;
+      }
+      table {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      td{
+        background-color: rgb(248, 240, 240);
+        padding: 30px;
+        border: 2px solid lightcoral;
+      }
+      .tools:hover{
+          color: blue;
+      }
