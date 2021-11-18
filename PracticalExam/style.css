@@ -40,6 +40,10 @@
             font-weight: 500;  
             
         }
+        .header ul li:hover
+        {
+            background-color: lightsalmon;
+        }
 
 .main
 {
